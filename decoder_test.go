@@ -1,9 +1,10 @@
 package html
 
 import (
-	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 // Simple usecases
@@ -111,14 +112,14 @@ func TestLoadFromAttribute(t *testing.T) {
 	}
 
 	//language=html
-	html := `<body><a class="foo" href="http://github.com/zlepper/encoding-html">Link to encoding-html on GitHub</a></body>`
+	html := `<body><a class="foo" href="http://github.com/mbsulliv/encoding-html">Link to encoding-html on GitHub</a></body>`
 
 	var a attrStruct
 	err := Unmarshal([]byte(html), &a)
 
 	assert.NoError(t, err)
 	assert.Equal(t, "Link to encoding-html on GitHub", a.Foo)
-	assert.Equal(t, "http://github.com/zlepper/encoding-html", a.Link)
+	assert.Equal(t, "http://github.com/mbsulliv/encoding-html", a.Link)
 }
 
 // Odd edgecases that I want to make sure are handled

@@ -1,12 +1,10 @@
-[![Build Status](https://travis-ci.org/zlepper/encoding-html.svg?branch=master)](https://travis-ci.org/zlepper/encoding-html)
-
 # Encoding-html
 A library for decoding html into golang structs. Useful e.g.
 for making crawlers to interact with pages that does not have an actual api.
 
 ## Installation
 ```
-go get github.com/zlepper/encoding-html
+go get github.com/mbsulliv/encoding-html
 ```
 
 # Examples
@@ -16,7 +14,7 @@ Getting the front page of hackernews:
 package main
 
 import (
-	"github.com/zlepper/encoding-html"
+	"github.com/mbsulliv/encoding-html"
 	"net/http"
 	"log"
 )

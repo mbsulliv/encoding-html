@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/zlepper/encoding-html"
 	"log"
 	"net/http"
+
+	html "github.com/mbsulliv/encoding-html"
 )
 
 type Post struct {
